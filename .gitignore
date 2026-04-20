@@ -1,0 +1,9 @@
+#Daten-Ordner
+images/
+masks/
+metadata/
+
+src/__pycache__
+
+#test-Dateien
+showimages.py

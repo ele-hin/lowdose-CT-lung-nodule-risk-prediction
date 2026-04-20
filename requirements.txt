@@ -1,0 +1,5 @@
+torch
+torchvision
+SimpleITK
+numpy
+matplotlib
