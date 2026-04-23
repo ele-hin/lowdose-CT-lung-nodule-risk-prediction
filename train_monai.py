@@ -18,7 +18,7 @@ def train():
         reader="rad2",
         patch_size=(64, 64, 64),
         num_samples=2,
-        max_cases=10,
+        max_cases=20,
         cache_rate=1.0,
     )
 
@@ -33,10 +33,10 @@ def train():
     )
 
     model = UNet(in_channels=1, num_classes=1).to(device)
-    criterion = torch.nn.BCEWithLogitsLoss()
+    criterion = torch.nn.BCEWithLogitsLoss()                #BCE?
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
 
-    num_epochs = 3
+    num_epochs = 10
 
     model.train()
     for epoch in range(num_epochs):
