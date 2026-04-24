@@ -1,9 +1,10 @@
 #Daten-Ordner
-images/
-masks/
-metadata/
+data/
 
 src/__pycache__
+src/test.py
+src/visualize_mask.py
+src/prepare_data.py
 
 #test-Dateien
 showimages.py
